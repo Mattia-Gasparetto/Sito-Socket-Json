@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Socket</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Le Socket</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#introduzione">Introduzione</a></li>
+          <li><a href="#collegamenti">Collegamenti</a></li>
+          <li><a href="#glossario">Glossario</a></li>
+          <li><a href="#blog">Blog</a></li>  
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div id="hero-carousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Definizione di socket</h2>
+            <p class="animate__animated animate__fadeInUp">Una socket è un'interfaccia software che consente la comunicazione tra due dispositivi o processi in una rete. È il punto di accesso attraverso il quale un programma può inviare e ricevere dati utilizzando protocolli di rete come TCP o UDP.</p>
+            <a href="#introduzione" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Tipologie di socket</h2>
+            <p class="animate__animated animate__fadeInUp">Le socket si suddividono in stream socket, basate su TCP, affidabili e orientate alla connessione, e datagram socket, basate su UDP, veloci ma non affidabili, adatte rispettivamente a trasferimenti sicuri e streaming o giochi online.</p>
+            <a href="#introduzione" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Comunicazione</h2>
+            <p class="animate__animated animate__fadeInUp">La comunicazione tra un server e un client segue una sequenza ben definita, differenziata a seconda che si utilizzi una socket orientata alla connessione (TCP) o non orientata alla connessione (UDP).</p>
+            <a href="#introduzione" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="wave1">
+          <use xlink:href="#wave-path" x="50" y="3"></use>
+        </g>
+        <g class="wave2">
+          <use xlink:href="#wave-path" x="50" y="0"></use>
+        </g>
+        <g class="wave3">
+          <use xlink:href="#wave-path" x="50" y="9"></use>
+        </g>
+      </svg>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Introduzione Animata -->
+<section id="introduzione" class="hero d-flex align-items-center">
+  <div class="mt-5 text-center" data-aos="fade-in">
+    <h1>Scopri il Mondo delle Socket</h1>
+    <p>Il cuore della comunicazione tra applicazioni e sistemi di rete</p>
+    <a href="https://it.wikipedia.org/wiki/Socket_(reti)" target="_blank" class="btn-get-started">Scopri di più</a>
+  </div>
+</section><!-- /Hero Section -->
+
+<section id="introduzione" class="about section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Introduzione</h2>
+    <p>Concetti e Contenuti</p>
+  </div>
+
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+        <p>
+          Nel mondo dell'informatica, il termine socket si riferisce a un punto di comunicazione in una rete che permette a due applicazioni di scambiarsi dati tra loro, sia all'interno di una stessa macchina che attraverso una rete. I socket sono essenziali per la creazione di applicazioni di rete, come siti web, applicazioni di messaggistica, e software di streaming.
+        </p>
+      </div>
+
+      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+        <p>
+          Una socket rappresenta un'interfaccia tra l'applicazione e il protocollo di rete sottostante, come TCP/IP. La sua funzione principale è quella di fornire un meccanismo di comunicazione bidirezionale. Tra i principali tipi troviamo gli stream socket (basati su TCP) e i datagram socket (basati su UDP).
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="divider"></div>
+</section><!-- /About Section -->
+
+<section id="introduzione" class="about section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Perché sono importanti i Socket?</h2>
+    <p>Scopri il loro ruolo chiave nell'informatica e nei sistemi di rete</p>
+  </div>
+
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+        <p>
+          Nel contesto di Informatica e Sistemi, la comprensione dei socket è fondamentale per lo sviluppo di applicazioni distribuite, l'implementazione di server e client, e la gestione di reti informatiche. I socket sono alla base di molte tecnologie moderne come HTTP, FTP, SSH, e persino nei sistemi di comunicazione in tempo reale come le applicazioni VoIP. L'integrazione con i sistemi di rete e la gestione delle connessioni tra dispositivi richiede una profonda conoscenza dei socket, poiché sono uno degli elementi chiave che abilitano la comunicazione tra i vari dispositivi all'interno di una rete.
+        </p>
+      </div>
+
+      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+        <p>In questo sito, esploreremo i vari tipi di socket, il loro funzionamento e l'importanza di questi nel contesto delle reti e dei sistemi informatici. Attraverso una panoramica dettagliata del processo di comunicazione e delle tecniche avanzate di gestione dei socket, forniremo una risorsa utile per chi desidera comprendere meglio come i dati vengono trasmessi in un ambiente di rete e come progettare applicazioni che sfruttano questa tecnologia.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="divider"></div>
+</section><!-- /About Section -->
+
+<section class="features section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Perché sono importanti i Socket?</h2>
+    <p>Il Processo di Comunicazione tramite Socket</p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <!-- Colonna del contenuto -->
+      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+        <p class="fst-italic">
+          Il processo di comunicazione tramite socket coinvolge una serie di passaggi cruciali:
+        </p>
+        <ul>
+          <li><i class="bi bi-check2-all"></i> Stabilire una connessione con il dispositivo remoto tramite il socket.</li>
+          <li><i class="bi bi-check2-all"></i> Inviare e ricevere dati tramite operazioni di lettura e scrittura.</li>
+          <li><i class="bi bi-check2-all"></i> Chiudere il socket per liberare le risorse di sistema al termine della comunicazione.</li>
+        </ul>
+        <p>
+          Questo meccanismo garantisce uno scambio di dati affidabile, indipendentemente dalla complessità della rete. I socket offrono un'interfaccia standard per la comunicazione tra due nodi di una rete, rendendo possibile l'interazione tra applicazioni diverse. Grazie ai socket, i dati vengono trasmessi in modo affidabile, garantendo l'integrità delle informazioni attraverso meccanismi come il controllo degli errori.
+        </p>
+      </div>
+      
+      <!-- Colonna con l'immagine -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+        <img src="assets/img/working-1.jpg" alt="Descrizione immagine" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Box con Vantaggi -->
+<section class="benefits section bg-light">
+  <div class="container">
+    <div class="row gy-4" data-aos="fade-up">
+      <div class="col-lg-4">
+        <div class="box">
+          <i class="bi bi-laptop"></i>
+          <h4>Facilità di Implementazione</h4>
+          <p>Grazie ai socket, gli sviluppatori possono creare applicazioni client-server in modo semplice ed efficiente.</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="box">
+          <i class="bi bi-speedometer"></i>
+          <h4>Velocità di Comunicazione</h4>
+          <p>La comunicazione tramite socket offre un'elevata velocità, rendendola ideale per applicazioni in tempo reale.</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="box">
+          <i class="bi bi-shield-check"></i>
+          <h4>Affidabilità</h4>
+          <p>Protocollo TCP garantisce una trasmissione dati sicura e senza perdita di pacchetti.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- /Benefits Section -->
+
+
+    <!-- Services Section -->
+    <section id="collegamenti" class="services section mt-5">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Argomenti</h2>
+        <p>Varie Sezioni</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-cash-stack" style="color: #0dcaf0;"></i>
+              </div>
+              <a href="socket.html" class="stretched-link">
+                <h3>Socket</h3>
+              </a>
+              <p>Esplora in dettaglio come funzionano i socket nella comunicazione di rete, comprendendo i protocolli sottostanti e il ruolo fondamentale nell'invio e nella ricezione di dati tra dispositivi.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-calendar4-week" style="color: #fd7e14;"></i>
+              </div>
+              <a href="modelloOSI.html" class="stretched-link">
+                <h3>Modello ISO-OSI</h3>
+              </a>
+              <p>Scopri le sette fasi del modello OSI (soprattuto il livello di transporto), un framework essenziale per comprendere come i dati viaggiano attraverso le reti, garantendo interoperabilità e standardizzazione</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-chat-text" style="color: #20c997;"></i>
+              </div>
+              <a href="protocolli.html" class="stretched-link">
+                <h3>Protocolli TCP e UDP</h3>
+              </a>
+              <p>Analisi comparativa dei protocolli TCP e UDP: scopri le loro differenze, applicazioni pratiche e scenari in cui sono utilizzati per garantire una comunicazione efficiente.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <section id = "glossario" class="mt-5 glossary-section py-5">
+      <div class="container text-center">
+          <h2 class="text-center mb-4">Glossario</h2>
+          <p class="text-center text-muted mb-5">
+              Un elenco di termini tecnici con definizioni e collegamenti utili per approfondire i concetti chiave.
+          </p>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card small-card">
+                  <h5>Socket</h5>
+                  <p>Punto di comunicazione in rete per l'invio e la ricezione di dati tra dispositivi.</p>
+                  <button a href = "socket.html" class="btn1 btn-primary">Scopri di più</button>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card small-card">
+                  <h5>Client</h5>
+                  <p>Dispositivo o applicazione che richiede un servizio o risorsa a un server.</p>
+                  <button a href = "socket.html" class="btn1 btn-primary">Scopri di più</button>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card small-card">
+                  <h5>Server</h5>
+                  <p>Dispositivo o applicazione che fornisce risorse o servizi ai client.</p>
+                  <button a href = "socket.html" class="btn1 btn-primary">Scopri di più</button>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card small-card">
+                  <h5>TCP</h5>
+                  <p>Protocollo di comunicazione orientato alla connessione, affidabile ma più lento.</p>
+                  <button a href = "protocolli.html" class="btn1 btn-primary">Scopri di più</button>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card small-card">
+                  <h5>UDP</h5>
+                  <p>Protocollo di comunicazione veloce e non affidabile. Ideale per streaming o giochi online.</p>
+                  <button a href = "protocolli.html" class="btn1 btn-primary">Scopri di più</button>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card small-card">
+                  <h5>IP</h5>
+                  <p>Protocollo di indirizzamento che gestisce la trasmissione dei pacchetti sulla rete.</p>
+                  <button a href = "modelloOSI.html" class="btn1 btn-primary">Scopri di più</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+  
+  </section>
+
+    <!-- Faq Section -->
+    <section id="blog" class="faq section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Blog</h2>
+        <p>Domande Frequenti</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-12">
+            <div class="custom-accordion" id="accordion-faq">
+              <div class="accordion-item">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-1">
+                    Cos'è una socket e a cosa serve?
+                  </button>
+                </h2>
+
+                <div id="collapse-faq-1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-faq">
+                  <div class="accordion-body">
+                    Una socket è un'interfaccia software che permette la comunicazione tra dispositivi (ad esempio, due computer) su una rete. Funziona come un punto finale per l'invio e la ricezione di dati in una connessione di rete, utilizzando protocolli come TCP/IP. Le socket sono usate per costruire applicazioni client-server, come browser web, client di posta elettronica e servizi di streaming.
+                  </div>
+                </div>
+              </div>
+              <!-- .accordion-item -->
+
+              <div class="accordion-item">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-2">
+                    Qual è la differenza tra una socket TCP e una socket UDP?
+                  </button>
+                </h2>
+                <div id="collapse-faq-2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-faq">
+                  <div class="accordion-body">
+                    Le socket TCP forniscono una connessione affidabile, orientata alla connessione. Garantiscono che i dati vengano consegnati nell'ordine corretto, ma hanno un overhead maggiore. Sono ideali per applicazioni dove l'affidabilità è cruciale, come il trasferimento file o il web browsing.
+                    Le socket UDP, invece, sono senza connessione e non garantiscono la consegna né l'ordine dei dati. Hanno un overhead inferiore, rendendoli ideali per applicazioni in tempo reale come il gaming online o lo streaming video.
+                  </div>
+                </div>
+              </div>
+            <!-- .accordion-item -->
+            <div class="accordion-item">
+              <h2 class="mb-1">
+                <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-3">
+                  Cosa fa una socket in un programma?
+                </button>
+              </h2>
+              <div id="collapse-faq-3" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-faq">
+                <div class="accordion-body">
+                  Una socket permette a un programma di inviare e ricevere dati su una rete, come Internet. Può essere vista come una "porta" attraverso cui il programma comunica con altri dispositivi, sia che si tratti di un server web, di un altro computer o di un altro programma sulla stessa macchina.
+                </div>
+              </div>
+            </div>
+            <!-- .accordion-item -->
+          </div>
+        </div>
+      </div>
+      </div>
+    </section><!-- /Faq Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background mt-5">
+    <div class="container">
+      <h3 class="sitename">Le Socket</h3>
+      <p>Mattia Gasparetto 5°E</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-skype"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

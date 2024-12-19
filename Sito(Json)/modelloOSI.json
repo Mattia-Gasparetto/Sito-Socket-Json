@@ -1,0 +1,72 @@
+{
+    "modelloISOOSI": {
+      "titolo": "Benvenuti nel mondo del Modello ISO-OSI!",  
+      "introduzione": "Il Modello ISO-OSI è la base teorica fondamentale per comprendere come le reti di comunicazione permettono il trasferimento di dati tra dispositivi. Suddiviso in sette livelli distinti, ciascuno con un ruolo ben definito, questo modello standard facilita l'interoperabilità e rende possibile la connessione tra tecnologie diverse. Grazie alla sua struttura logica, il modello non solo semplifica la progettazione di sistemi di rete ma funge anche da guida per risolvere problemi e migliorare le prestazioni. Scopriamo insieme ogni livello e il suo ruolo cruciale nel far funzionare il mondo digitale che ci circonda!",
+      "navbar": {
+        "logo": "Le Socket",
+        "vociMenu": [
+          {"nome": "Home", "link": "index.html", "attivo": true},
+          {"nome": "Introduzione", "link": "#introduzione-iso-osi"},
+          {"nome": "Collegamenti", "link": "#collegamenti"},
+          {"nome": "Glossario", "link": "#glossario"},
+          {"nome": "Blog", "link": "#blog"}
+        ]
+      },
+      "livelli": [
+        {
+          "nome": "Livello Fisico (Physical Layer)",
+          "descrizione": "Il Livello Fisico si occupa della trasmissione fisica dei dati attraverso il mezzo. Gestisce la codifica e la modulazione dei segnali.",
+          "funzioni": ["Trasmissione di bit grezzi."],
+          "protocolli": ["Ethernet", "Wi-Fi", "Fibre Channel"]
+        },
+        {
+          "nome": "Livello Collegamento Dati (Data Link Layer)",
+          "descrizione": "Il Livello Collegamento Dati gestisce l'accesso al mezzo fisico, fornendo la correzione degli errori a livello di frame.",
+          "funzioni": ["Creazione e gestione di frame."],
+          "protocolli": ["Ethernet", "PPP", "Frame Relay"]
+        },
+        {
+          "nome": "Livello Rete (Network Layer)",
+          "descrizione": "Il Livello Rete si occupa del routing dei pacchetti e dell'indirizzamento IP, permettendo la comunicazione tra diverse reti.",
+          "funzioni": ["Routing dei pacchetti tra dispositivi."],
+          "protocolli": ["IP", "ICMP", "IPsec"]
+        },
+        {
+          "nome": "Livello Trasporto (Transport Layer)",
+          "descrizione": "Il Livello Trasporto è responsabile della trasmissione affidabile e della gestione degli errori.",
+          "funzioni": ["Controllo del flusso", "Controllo degli errori", "Segmentazione dei dati", "Connessione", "Affidabilità."],
+          "protocolli": ["TCP", "UDP", "SPX"]
+        },
+        {
+          "nome": "Livello Sessione (Session Layer)",
+          "descrizione": "Il Livello Sessione gestisce le connessioni tra le applicazioni, come il controllo del flusso e la sincronizzazione dei dati.",
+          "funzioni": ["Gestione delle sessioni di comunicazione."],
+          "protocolli": ["NetBIOS", "RPC"]
+        },
+        {
+          "nome": "Livello Presentazione (Presention Layer)",
+          "descrizione": "Il Livello Presentazione si occupa della codifica e della compressione dei dati, preparando i dati per la visualizzazione.",
+          "funzioni": ["Codifica dei dati per la visualizzazione."],
+          "protocolli": ["SSL/TLS", "JPEG", "GIF"]
+        },
+        {
+          "nome": "Livello Applicazione (Application Layer)",
+          "descrizione": "Il Livello Applicazione fornisce servizi di rete a software applicativo come browser web e client di posta elettronica.",
+          "funzioni": ["Interazione diretta con l'utente."],
+          "protocolli": ["HTTP", "SMTP", "FTP"]
+        }
+      ],
+      "footer": {
+        "siteName": "Modello ISO OSI",
+        "credits": "Mattia Gasparetto 5°E",
+        "socialLinks": [
+        { "icon": "bi-twitter-x", "link": "#" },
+        { "icon": "bi-facebook", "link": "#" },
+        { "icon": "bi-instagram", "link": "#" },
+        { "icon": "bi-skype", "link": "#" },
+        { "icon": "bi-linkedin", "link": "#" }
+      ]
+     }
+    }
+  }
+  

@@ -1,0 +1,78 @@
+{
+    "title": "Socket",
+    "meta": {
+      "charset": "utf-8",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "",
+      "keywords": ""
+    },
+    "header": {
+      "logo": "Le Socket",
+      "navmenu": [
+        { "text": "Home", "link": "", "active": true },
+        { "text": "Introduzione", "link": "" },
+        { "text": "Collegamenti", "link": "" },
+        { "text": "Glossario", "link": "" },
+        { "text": "Blog", "link": "" }
+      ]
+    },
+    "pageTitle": {
+      "title": "Protocolli TCP e UDP",
+      "breadcrumbs": [
+        { "name": "Home", "link": "index.html" },
+        { "name": "Protocolli TCP e UDP", "current": true }
+      ]
+    },
+    "intro": {
+      "paragraph": "I protocolli TCP (Transmission Control Protocol) e UDP (User Datagram Protocol) sono fondamentali per il funzionamento di Internet. Ognuno di essi ha caratteristiche uniche che li rendono adatti a situazioni diverse. Scopriamo insieme come funzionano e le loro principali differenze.",
+      "image": "assets/img/img2.png"
+    },
+    "sections": [
+      {
+        "title": "TCP (Transmission Control Protocol)",
+        "icon": "bi-wifi",
+        "points": [
+          "Orientato alla connessione: utilizza il processo di three-way handshake per stabilire una connessione sicura.",
+          "Affidabilità: garantisce la consegna dei dati tramite conferme (ACK) e ritrasmissioni in caso di perdita.",
+          "Controllo del flusso: regola la trasmissione dei dati per evitare il sovraccarico del destinatario.",
+          "Controllo degli errori: verifica e corregge eventuali errori nei dati trasmessi.",
+          "Applicazioni principali: Web browsing (HTTP/HTTPS), email (SMTP, POP3, IMAP), file transfer (FTP), accesso remoto (SSH)."
+        ]
+      },
+      {
+        "title": "UDP (User Datagram Protocol)",
+        "icon": "bi-lightning-fill",
+        "points": [
+          "Senza connessione: trasmette dati sotto forma di datagrammi, senza handshake iniziale.",
+          "Velocità: molto rapido perché elimina controlli come conferme e ritrasmissioni.",
+          "Mancanza di affidabilità: non garantisce la consegna dei pacchetti né la correzione degli errori.",
+          "Adatto per broadcast e multicast: consente la trasmissione a più destinatari contemporaneamente.",
+          "Applicazioni principali: Streaming video/audio (YouTube, Netflix), gaming online, VoIP (Skype), DNS, sincronizzazione oraria (NTP)."
+        ]
+      },
+      {
+        "title": "Confronto TCP vs UDP",
+        "icon": "bi-columns-gap",
+        "comparison": [
+          { "caratteristica": "Connessione", "tcp": "Orientato alla connessione", "udp": "Senza connessione" },
+          { "caratteristica": "Affidabilità", "tcp": "Garantita con ritrasmissioni", "udp": "Non garantita" },
+          { "caratteristica": "Velocità", "tcp": "Più lento", "udp": "Molto rapido" },
+          { "caratteristica": "Controllo del flusso", "tcp": "Presente", "udp": "Assente" },
+          { "caratteristica": "Applicazioni principali", "tcp": "Web browsing, email, FTP", "udp": "Streaming, gaming, VoIP" }
+        ]
+      }
+    ],
+    "footer": {
+    "siteName": "Modello ISO OSI",
+    "credits": "Mattia Gasparetto 5°E",
+    "socialLinks": [
+      { "icon": "bi-twitter-x", "link": "#" },
+      { "icon": "bi-facebook", "link": "#" },
+      { "icon": "bi-instagram", "link": "#" },
+      { "icon": "bi-skype", "link": "#" },
+      { "icon": "bi-linkedin", "link": "#" }
+    ]
+  }
+}
+
+  

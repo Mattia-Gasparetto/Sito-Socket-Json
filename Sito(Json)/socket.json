@@ -1,0 +1,123 @@
+{
+    "pageTitle": "Socket",
+    "siteName": "Le Socket",
+    "header": {
+      "logoText": "Le Socket",
+      "menuItems": [
+        { "name": "Home", "link": "#", "active": true },
+        { "name": "Introduzione", "link": "#intro" },
+        { "name": "Collegamenti", "link": "#process" },
+        { "name": "Glossario", "link": "#glossario" },
+        { "name": "Blog", "link": "#" }
+      ]
+    },
+    "pageTitleSection": {
+      "title": "Le Socket",
+      "breadcrumbs": [
+        { "name": "Home", "link": "index.html" },
+        { "name": "Le Socket", "current": true }
+      ]
+    },
+    "sections": [
+      {
+        "id": "intro",
+        "title": "Cos'è una Socket?",
+        "content": "Una socket è un'interfaccia software che permette la comunicazione tra due applicazioni attraverso una rete. Funziona come un punto terminale di trasmissione e ricezione dati.",
+        "image": "assets/img/img.png",
+        "points": [
+          "Punto terminale: Una socket collega un'applicazione all'altra tramite una rete.",
+          "Comunicazione bidirezionale: Dati possono fluire in entrambe le direzioni.",
+          "Identificazione: Ogni socket è associata a un indirizzo IP e una porta univoca."
+        ]
+      },
+      {
+        "id": "types",
+        "title": "Socket TCP vs Socket UDP",
+        "description": "Esistono due principali tipi di socket, ciascuno con caratteristiche, vantaggi e svantaggi specifici. Le socket TCP sono orientate alla connessione e garantiscono affidabilità, mentre le socket UDP sono più veloci ma meno sicure.",
+        "comparison": [
+          {
+            "feature": "Connessione necessaria",
+            "tcp": "Sì, necessita di una connessione stabile.",
+            "udp": "No, funziona senza connessione diretta."
+          },
+          {
+            "feature": "Affidabilità",
+            "tcp": "Alta, con garanzia di consegna dei dati.",
+            "udp": "Bassa, i pacchetti possono andare persi."
+          },
+          {
+            "feature": "Ordine dei pacchetti",
+            "tcp": "Garantito, i pacchetti arrivano nell'ordine corretto.",
+            "udp": "Non garantito, l'ordine potrebbe non essere rispettato."
+          },
+          {
+            "feature": "Velocità",
+            "tcp": "Più lento, a causa dei controlli di affidabilità.",
+            "udp": "Più veloce, ideale per trasmissioni rapide."
+          },
+          {
+            "feature": "Applicazioni tipiche",
+            "tcp": "Home banking, server di posta elettronica, web server e applicazioni di messaggistica.",
+            "udp": "Streaming video, giochi online, VoIP e DNS."
+          }
+        ]
+      },
+      {
+        "id": "process",
+        "title": "Processo di Comunicazione",
+        "description": "Il processo di comunicazione differisce tra TCP e UDP. TCP stabilisce una connessione prima di inviare dati, mentre UDP invia pacchetti direttamente senza connessione.",
+        "tcp": [
+          "Creazione della socket lato server.",
+          "Binding dell'indirizzo IP e della porta al server.",
+          "Messa in ascolto del server e accettazione della connessione dal client.",
+          "Scambio bidirezionale di dati tra server e client.",
+          "Chiusura della connessione una volta terminata la comunicazione."
+        ],
+        "udp": [
+          "Creazione della socket senza connessione.",
+          "Invio di dati dal client al server.",
+          "Ricezione dei dati lato server (opzionalmente il server risponde al client).",
+          "Chiusura della comunicazione senza la necessità di terminare formalmente la connessione."
+        ]
+      },
+      {
+        "id": "examples",
+        "title": "Esempi Pratici",
+        "examples": {
+          "tcp": [
+            "Home banking",
+            "Server di posta elettronica",
+            "Applicazioni di messaggistica istantanea"
+          ],
+          "udp": [
+            "Streaming video",
+            "Giochi online",
+            "Comunicazioni VoIP"
+          ]
+        }
+      },
+      {
+        "id": "glossario",
+        "title": "Glossario",
+        "description": "Una raccolta di termini chiave utilizzati nelle socket.",
+        "terms": [
+          { "term": "TCP", "definition": "Protocollo di trasmissione orientato alla connessione." },
+          { "term": "UDP", "definition": "Protocollo di trasmissione senza connessione." },
+          { "term": "Socket", "definition": "Interfaccia software per la comunicazione tra applicazioni." }
+        ]
+      }
+    ],
+    "footer": {
+      "siteName": "Le Socket",
+      "credits": "Mattia Gasparetto 5°E",
+      "socialLinks": [
+        { "icon": "bi-twitter-x", "link": "#" },
+        { "icon": "bi-facebook", "link": "#" },
+        { "icon": "bi-instagram", "link": "#" },
+        { "icon": "bi-skype", "link": "#" },
+        { "icon": "bi-linkedin", "link": "#" }
+      ]
+    }
+  }
+  
+  
